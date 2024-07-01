@@ -12,11 +12,11 @@ comes with a LSP for Vim users.
 
 ## Start the application
 
-Run `npx nx dev org_react` to start the development server. Happy coding!
+Run `npx nx dev react_app` to start the development server. Happy coding!
 
 ## Build for production
 
-Run `npx nx build org_react` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
+Run `npx nx build react_app` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
 
 ## Running tasks
 

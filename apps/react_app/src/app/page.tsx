@@ -13,7 +13,7 @@ export default function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome org_react 👋
+              Welcome react_app 👋
             </h1>
           </div>
 
@@ -397,7 +397,7 @@ export default function Index() {
                 </svg>
                 View project details
               </summary>
-              <pre>nx show project org_react --web</pre>
+              <pre>nx show project react_app --web</pre>
             </details>
             <details>
               <summary>

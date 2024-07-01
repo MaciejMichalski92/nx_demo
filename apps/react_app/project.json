@@ -1,9 +1,9 @@
 {
-  "name": "org_react",
+  "name": "react_app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/org_react",
+  "sourceRoot": "apps/react_app",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project org_react --web",
+  "// targets": "to see all targets run: nx show project react_app --web",
   "targets": {}
 }
