@@ -12,3 +12,32 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  username  String    @unique
+  name      String
+  surname   String
+  email     String    @unique
+  password  String
+  products  Product[]
+  posts     Post[]
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  name        String   @db.VarChar(150)
+  belongsToId String
+  belongsTo   User     @relation(fields: [belongsToId], references: [id])
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  title       String   @db.VarChar(100)
+  description String   @db.VarChar(350)
+  belongsToId String
+  belongsTo   User     @relation(fields: [belongsToId], references: [id])
+}
